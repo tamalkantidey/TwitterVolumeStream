@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams\\TwitterVolumeStreams.csproj": {}
+  },
+  "projects": {
+    "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\TwitterVolumeStreams.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\TwitterVolumeStreams.Data.csproj",
+        "projectName": "TwitterVolumeStreams.Data",
+        "projectPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\TwitterVolumeStreams.Data.csproj",
+        "packagesPath": "C:\\Users\\tamal.kantidey\\.nuget\\packages\\",
+        "outputPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tamal.kantidey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vcavsts.pkgs.visualstudio.com/831de045-3a6d-4ef1-8404-8bb9a6befc17/_packaging/CoreCompLibrary/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\TwitterVolumeStreams.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\TwitterVolumeStreams.Service.csproj",
+        "projectName": "TwitterVolumeStreams.Service",
+        "projectPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\TwitterVolumeStreams.Service.csproj",
+        "packagesPath": "C:\\Users\\tamal.kantidey\\.nuget\\packages\\",
+        "outputPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tamal.kantidey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vcavsts.pkgs.visualstudio.com/831de045-3a6d-4ef1-8404-8bb9a6befc17/_packaging/CoreCompLibrary/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\TwitterVolumeStreams.Data.csproj": {
+                "projectPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Data\\TwitterVolumeStreams.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSMQ.Messaging": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams\\TwitterVolumeStreams.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams\\TwitterVolumeStreams.csproj",
+        "projectName": "TwitterVolumeStreams",
+        "projectPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams\\TwitterVolumeStreams.csproj",
+        "packagesPath": "C:\\Users\\tamal.kantidey\\.nuget\\packages\\",
+        "outputPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tamal.kantidey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vcavsts.pkgs.visualstudio.com/831de045-3a6d-4ef1-8404-8bb9a6befc17/_packaging/CoreCompLibrary/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\TwitterVolumeStreams.Service.csproj": {
+                "projectPath": "D:\\Twitter\\TwitterVolumeStreams\\TwitterVolumeStreams.Service\\TwitterVolumeStreams.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSMQ.Messaging": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

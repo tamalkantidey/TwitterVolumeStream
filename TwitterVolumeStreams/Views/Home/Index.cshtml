@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Volume Streams Page";
+}
+<input type="hidden" id="hdnCount" value="0"/>
+<div class="text-center">
+    <h1 class="display-2">Volume streams</h1>
+    <h1 class="display-4">Total Count: <span id="spanCount"></span></h1>
+    <h1 class="display-4">Average tweets per minute : <span id="spanAvg">Loading...</span></h1>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        debugger;
+        $.get("/Home/GetTweets", null, function (data) {
+        });
+
+        var start = new Date;
+        setInterval(function () {
+            debugger;
+            var time = (new Date - start) / 1000;
+            var diff = time / 60;
+            var absDiff = Math.abs(Math.round(diff));
+            var total = parseInt($("#hdnCount").val());
+            if (absDiff > 0) {
+                $('#spanAvg').text(total / absDiff + " / Min");
+            }
+            
+        }, 60 * 1000);
+        window.setInterval(function () {
+            $.get("/Home/GetCountTweet", null, function (data) {
+                debugger;
+                $("#hdnCount").val(data);
+                $("#spanCount").text(data);
+            });
+        }, 1000);
+        
+    });
+    
+</script>

@@ -1,0 +1,16 @@
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.deps.json
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.dll
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.pdb
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.csproj.AssemblyReference.cache
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.AssemblyInfoInputs.cache
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.AssemblyInfo.cs
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.csproj.CoreCompileInputs.cache
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.dll
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.pdb
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.runtimeconfig.json
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.runtimeconfig.dev.json
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Data.dll
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\bin\Debug\netcoreapp3.1\TwitterVolumeStreams.Data.pdb
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.csproj.CopyComplete
+D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Service\obj\Debug\netcoreapp3.1\TwitterVolumeStreams.Service.genruntimeconfig.cache
