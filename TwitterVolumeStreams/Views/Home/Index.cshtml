@@ -10,13 +10,11 @@
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        debugger;
         $.get("/Home/GetTweets", null, function (data) {
         });
 
         var start = new Date;
         setInterval(function () {
-            debugger;
             var time = (new Date - start) / 1000;
             var diff = time / 60;
             var absDiff = Math.abs(Math.round(diff));
@@ -28,7 +26,6 @@
         }, 60 * 1000);
         window.setInterval(function () {
             $.get("/Home/GetCountTweet", null, function (data) {
-                debugger;
                 $("#hdnCount").val(data);
                 $("#spanCount").text(data);
             });

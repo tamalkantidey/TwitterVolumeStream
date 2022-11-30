@@ -15,8 +15,6 @@ namespace TwitterVolumeStreams.Data
         {
 
             string queryString = "SELECT Count(*) from dbo.Tweet";
-            string configvalue1 = ConfigurationManager.AppSettings["connectionString"];
-            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Data\Twitter.mdf;Integrated Security=True";
             int count = 0;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -44,10 +42,7 @@ namespace TwitterVolumeStreams.Data
 
         public async void saveTweet(string tweet,string connectionString)
         {
-            //string configvalue1 = ConfigurationManager.AppSettings["connectionString"];
             string queryString = "insert into Tweet(Tweet) values (@tweet)";
-            //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Twitter\TwitterVolumeStreams\TwitterVolumeStreams.Data\Twitter.mdf;Integrated Security=True";
-           
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(queryString, connection))
