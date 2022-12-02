@@ -6,7 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using TwitterVolumeStreams.Data;
 using TwitterVolumeStreams.Service.Implementation;
@@ -16,9 +19,11 @@ namespace TwitterVolumeStreams
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private string _contentRootPath = "";
+        public Startup(IConfiguration configuration, Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
         {
             Configuration = configuration;
+            _contentRootPath = env.ContentRootPath;
         }
 
         public IConfiguration Configuration { get; }
@@ -30,6 +35,31 @@ namespace TwitterVolumeStreams
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddTransient<ITwitterManager, TwitterManager>();
             services.AddTransient<ITwitterDB, TwitterDB>();
+
+
+
+            var config = new ConfigurationBuilder()
+            .SetBasePath(_contentRootPath)
+            .AddJsonFile("appsettings.json")
+            .Build()
+            .Get<Config>();
+
+            string conn = config.ConnectionStrings.ConnectionString;
+            //if (conn.Contains("%CONTENTROOTPATH%"))
+            //{
+            //    config.ConnectionStrings.ConnectionString = conn.Replace("%CONTENTROOTPATH%", _contentRootPath);
+            //}
+
+            //var jsonWriteOptions = new JsonSerializerOptions()
+            //{
+            //    WriteIndented = true
+            //};
+            //jsonWriteOptions.Converters.Add(new JsonStringEnumConverter());
+
+            //var newJson = JsonSerializer.Serialize(config, jsonWriteOptions);
+
+            //var appSettingsPath = Path.Combine(_contentRootPath, "appsettings.json");
+            //File.WriteAllText(appSettingsPath, newJson);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
